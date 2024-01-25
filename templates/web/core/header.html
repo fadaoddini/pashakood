@@ -1,0 +1,226 @@
+{% load static %}
+<header class="header-wrap style1">
+    <div class="header-top xl-none">
+        <div class="close-header-top xl-none">
+            <button type="button"><i class="las la-times"></i></button>
+        </div>
+        <div class="container-fluid container-full">
+            <div class="row align-items-center">
+                <div class="col-xl-9">
+                    <div class="header-top-right">
+                        <div class="header-bottom-right xl-none">
+                            <div class="select_lang">
+                                <div class="navbar-option-item navbar-language dropdown language-option">
+                                    <button class="dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                        <i class="las la-globe"></i>
+                                        <span class="lang-name"></span>
+                                    </button>
+                                    <div class="dropdown-menu language-dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <img src="{% static 'index/assets/img/iran.png' %}"
+                                                 alt="flag">
+                                            فارسی
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="{% static 'index/assets/img/china.png' %}" alt="flag">
+                                            简体中文
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <img src="{% static 'index/assets/img/uae.png' %}" alt="flag">
+                                            العربيّة
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="quote.html" class="btn style1"> درخواست نقل قول<i
+                                    class="flaticon-left-arrow-1"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid container-full">
+        <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-6">
+                <a href="index.html" class="logo">
+                    <img src="{{ setting.logo.url }}" alt="{{ setting.title }}">
+                </a>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                <div class="main-menu-wrap style1">
+                    <div class="menu-close xl-none">
+                        <a href="javascript:void(0)"><i class="las la-times"></i></a>
+                    </div>
+                    <div id="menu">
+                        <ul class="main-menu list-style">
+                            <li class="has-children">
+                                <a class="active" href="#">خانه</a>
+                                <ul class="sub-menu list-style">
+                                    <li>
+                                        <a class="active" href="index.html">صفحه اصلی 1</a>
+                                    </li>
+                                    <li><a href="index-2.html">صفحه اصلی 2</a></li>
+                                    <li><a href="index-3.html">صفحه اصلی 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">خدمات</a>
+                                <ul class="sub-menu list-style">
+                                    <li>
+                                        <a href="services.html">خدمات ما</a>
+                                    </li>
+                                    <li>
+                                        <a href="service-details.html">جزئیات خدمات</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">پروژه ها</a>
+                                <ul class="sub-menu list-style">
+                                    <li>
+                                        <a href="projects.html">پروژه ها</a>
+                                    </li>
+                                    <li>
+                                        <a href="project-details.html">جزئیات پروژه ها</a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">گالری</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">صفحات</a>
+                                <ul class="sub-menu list-style">
+                                    <li><a href="about.html">درباره ما</a></li>
+                                    <li class="has-children">
+                                        <a href="#">فروشگاه</a>
+                                        <ul class="sub-menu list-style">
+                                            <li>
+                                                <a href="shop-left-sidebar.html">فروشگاه سایدبار
+                                                    1</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-right-sidebar.html">فروشگاه سایدبار
+                                                    2</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-No-sidebar.html">فروشگاه بدون
+                                                    سایدبار</a>
+                                            </li>
+                                            <li>
+                                                <a href="shop-details.html">جزئیات فروشگاه</a>
+                                            </li>
+                                            <li>
+                                                <a href="cart.html">سبد خرید</a>
+                                            </li>
+                                            <li>
+                                                <a href="wishlist.html">فهرست علاقه مندی ها</a>
+                                            </li>
+                                            <li>
+                                                <a href="checkout.html">بررسی محصول</a>
+                                            </li>
+                                            <li><a href="login.html">ورود کاربران</a></li>
+                                            <li><a href="register.html">ثبت نام</a></li>
+                                            <li><a href="my-account.html">حساب کاربری</a></li>
+                                            <li><a href="forgot-pwd.html">بازیابی گذرواژه</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="quote.html">درخواست نقل قول</a></li>
+                                    <li><a href="faq.html">سوالات متداول</a></li>
+                                    <li>
+                                        <a href="privacy-policy.html">حریم خصوصی</a>
+                                    </li>
+                                    <li>
+                                        <a href="terms-condition.html">شرایط و ضوابط</a>
+                                    </li>
+                                    <li><a href="404.html">خطا 404</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-children">
+                                <a href="#">وبلاگ</a>
+                                <ul class="sub-menu list-style">
+                                    <li class="has-children">
+                                        <a href="#">وبلاگ ما</a>
+                                        <ul class="sub-menu list-style">
+                                            <li>
+                                                <a href="blog-left-sidebar.html">وبلاگ سایدبار 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-right-sidebar.html">وبلاگ سایدبار
+                                                    2</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-no-sidebar.html">وبلاگ بدون
+                                                    سایدبار</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-children">
+                                        <a href="#">جزئیات وبلاگ</a>
+                                        <ul class="sub-menu list-style">
+                                            <li>
+                                                <a href="blog-details-left-sidebar.html">جزئیات
+                                                    وبلاگ سایدبار 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-details-right-sidebar.html">جزئیات
+                                                    وبلاگ سایدبار 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-details-no-sidebar.html">جزئیات وبلاگ
+                                                    بدون سایدبار</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">تماس با ما</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-bar-wrap">
+                    <div class="mobile-top-bar xl-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="mobile-menu xl-none">
+                        <a href="javascript:void(0)"><i class="las la-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 lg-none">
+                <div class="header-right">
+                    <div class="select_lang">
+                        <div class="navbar-option-item navbar-language dropdown language-option">
+                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                <i class="las la-globe"></i>
+                                <span class="lang-name"></span>
+                            </button>
+                            <div class="dropdown-menu language-dropdown-menu">
+                                <a class="dropdown-item" href="#">
+                                    <img src="{% static 'index/assets/img/iran.png' %}" alt="flag">
+                                    فارسی
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="{% static 'index/assets/img/china.png' %}" alt="flag">
+                                    简体中文
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <img src="{% static 'index/assets/img/uae.png' %}" alt="flag">
+                                    العربيّة
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="quote.html" class="btn style1"> درخواست نقل قول<i
+                            class="flaticon-left-arrow-1"></i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

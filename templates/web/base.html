@@ -1,0 +1,60 @@
+{% load static %}
+{% load setting_tag %}
+{% get_setting as setting %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords"
+          content="HTML5,CSS3,HTML,Template,multi-page,Hort - Garden Landscaper HTML Template">
+    <meta name="description" content="Hort - Garden Landscaper HTML Template">
+    <meta name="author" content="Barat Hadian">
+
+    <title>
+        {% block title %}
+
+
+        {% endblock %}
+
+    </title>
+
+    <link rel="shortcut icon" href="{{ setting.favicon.url }}" type="image/png">
+
+    <link rel="stylesheet" href="{% static 'index/assets/css/bootstrap.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'index/assets/css/line-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'index/assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'index/assets/css/swiper-min.css' %}">
+    <link rel="stylesheet" href="{% static 'index/assets/css/animation.css' %}">
+    <link rel="stylesheet" href="{% static 'index/assets/css/odometre.css' %}">
+    <link rel="stylesheet" href="{% static 'index/assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'index/assets/css/style.css' %}">
+    {% block styles %}
+
+    {% endblock %}
+</head>
+<body>
+ {% block preloader %} {% endblock %}
+
+
+<div class="page-wrapper ">
+
+
+    {% include 'web/core/message.html' %}
+    {% include 'web/core/header.html' %}
+
+    {% block content %} {% endblock %}
+
+
+    {% include 'web/core/newsletter.html' %}
+    {% include 'web/core/footer.html' %}
+
+</div>
+
+<a href="javascript:void(0)" class="back-to-top bounce"><i class="las la-arrow-up"></i></a>
+
+ {% block javas %} {% endblock %}
+</body>
+</html>

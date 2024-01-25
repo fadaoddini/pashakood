@@ -1,0 +1,66 @@
+﻿{% extends 'web/base.html' %}
+{% load static %}
+
+
+
+{% block styles %}
+
+{% endblock %}
+{% block title %}
+{{ setting.title }}
+{% endblock %}
+
+{% block preloader %}
+<div class="preloader js-preloader">
+    <img src="{% static 'index/assets/img/preloader.gif' %}" alt="{{setting.title}}">
+</div>
+ {% endblock %}
+
+{% block content %}
+
+<!--start hero-->
+ {% include 'web/index/hero.html' %}
+<!--end hero-->
+
+<!--start about-->
+ {% include 'web/index/about.html' %}
+<!--end about-->
+
+<!--start service-->
+ {% include 'web/index/service.html' %}
+<!--end service-->
+
+<!--start why-->
+ {% include 'web/index/why.html' %}
+<!--end why-->
+
+<!--start gallery-->
+ {% include 'web/index/gallery.html' %}
+<!--end gallery-->
+
+<!--start blog-->
+ {% include 'web/index/blog.html' %}
+<!--end blog-->
+
+<!--start tstimonial-->
+ {% include 'web/index/testimonial.html' %}
+<!--end testimonial-->
+
+{% endblock %}
+
+{% block javas %}
+<script src="{% static 'index/assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'index/assets/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'index/assets/js/bootstrap-validator.js' %}"></script>
+<script src="{% static 'index/assets/js/form-validation.js' %}"></script>
+<script src="{% static 'index/assets/js/swiper-min.js' %}"></script>
+<script src="{% static 'index/assets/js/jquery-magnific-popup.js' %}"></script>
+<script src="{% static 'index/assets/js/jquery-appear.js' %}"></script>
+<script src="{% static 'index/assets/js/scroll-animation.js' %}"></script>
+<script src="{% static 'index/assets/js/odometer.min.js' %}"></script>
+<script src="{% static 'index/assets/js/main.js' %}"></script>
+{% endblock %}
+
+
+</body>
+</html>
